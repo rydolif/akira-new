@@ -15,60 +15,7 @@ title: lvl1
 
   <div class="container">
 
-    <div class="profile__wrap">
-      <h1 class="nice-bg__caption">мой профиль</h1>
-      <div class="profile__avatar">
-        <div class="profile__avatar_img">
-          <img src="img/avatar-placeholder.svg" alt="">
-        </div>
-        <button class="next-btn btn btn-primary">выберите файл</button>
-        <button class="next-btn btn btn-primary">Загрузить</button>
-      </div>
-      <div class="profile__content">
-        <div class="profile__content_line profile__content_line--name">
-          <label for="">Фамилия</label>
-          <input type="text" placeholder="Фамилия">
-        </div>
-        <div class="profile__content_line profile__content_line--name">
-          <label for="">Имя</label>
-          <input type="text" placeholder="Имя">
-        </div>
-        <div class="profile__content_line profile__content_line--data">
-          <label for="">Дата рождения</label>
-          <input type="text" placeholder="Дата рождения">
-        </div>
-        <div class="profile__content_line profile__content_line--phone">
-          <label for="">Телефон с watsapp</label>
-          <input type="text" placeholder="Телефон с watsapp">
-        </div>
-        <div class="profile__content_line profile__content_line--mail">
-          <label for="">Email</label>
-          <input type="text" placeholder="Email">
-        </div>
-        <div class="profile__content_line profile__content_line--pass">
-          <label for="">Пароль</label>
-          <input type="text" placeholder="Пароль">
-        </div>
-        <div class="profile__content_btn">
-          <button class="next-btn btn btn-primary">Обновить данные</button>
-        </div>
-
-        <div class="profile__content_line">
-          <p class="profile__content_label">Дата начала</p>
-          <p class="profile__content_info"><img src="img/svg/4.svg" alt="">27/07/2020</p>
-        </div>
-        <div class="profile__content_line">
-          <p class="profile__content_label">Абонемент <br>“ментальная <br>арифметика”</p>
-          <p class="profile__content_info profile__content_info--red"><img src="img/svg/6.svg" alt="">Активирован</p>
-        </div>
-        <div class="profile__content_line">
-          <p class="profile__content_label">Абонемент <br>“скорочтение”</p>
-          <p class="profile__content_info profile__content_info--green"><img src="img/svg/5.svg" alt="">не Активирован</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="profile__table">
+    <div class="profile__table profile__table--archive">
       <h1 class="nice-bg__caption">статистика выполнения дз</h1>
 
       <div class="profile__table_wrap tabs">
@@ -93,6 +40,10 @@ title: lvl1
             <li><a href="#one" class="next-btn btn btn-primary">ментальная арифметика</a></li>
             <li><a href="#two" class="next-btn btn btn-primary">Скорочтение</a></li>
           </ul>
+          <div class="profile__content_line">
+            <p class="profile__content_label">Дата</p>
+            <p class="profile__content_info"><img src="img/svg/4.svg" alt="">27/07/2020</p>
+          </div>
         </div>
 
         <div id="one" class="tabs__wrap">
@@ -189,7 +140,6 @@ title: lvl1
               <td data-text="Успеваемость - Всего - ВП">17</td>
             </tr>
           </table>
-          <div class="profile__table_btn"><a href="#" class="next-btn btn btn-primary">Архив</a></div>
         </div>
         
         <div id="two" class="tabs__wrap">
@@ -286,7 +236,6 @@ title: lvl1
               <td data-text="Успеваемость - Всего - ВП">17</td>
             </tr>
           </table>
-          <div class="profile__table_btn"><a href="#" class="next-btn btn btn-primary">Архив</a></div>
         </div>
 
       </div>

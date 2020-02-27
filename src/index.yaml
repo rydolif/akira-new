@@ -41,3 +41,5 @@ PageList:
     ready: 50
   - file: page_profile.html
     ready: 50
+  - file: page_archive.html
+    ready: 50

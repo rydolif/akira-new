@@ -4,7 +4,6 @@ import "bootstrap/js/dist/dropdown";
 import "bootstrap/js/dist/tab";
 import "bootstrap/js/dist/popover";
 import "simplebar";
-// import "lib/jquery.fancybox.min.js";
 
 import { TweenMax, TimelineMax, Power1 } from "gsap";
 
@@ -268,4 +267,18 @@ $(document).ready(function() {
       _NextBounce(_boubles[i]);
     }
   }
+});
+
+
+//---------------------------js-----------------------
+$('.tabs__wrap').hide();
+$('.tabs__wrap:first').show();
+$('.tabs ul a:first').addClass('active');
+ $('.tabs ul a').click(function(event){
+  event.preventDefault();
+  $('.tabs ul a').removeClass('active');
+  $(this).addClass('active');
+  $('.tabs__wrap').hide();
+   var selectTab = $(this).attr('href');
+  $(selectTab).fadeIn();
 });
