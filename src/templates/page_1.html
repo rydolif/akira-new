@@ -1,0 +1,337 @@
+{% extends "layouts/_screen_layout.html" %}
+
+{% block screen_content %}
+
+<div class="container my-4 grow">
+  <div class="row w-100 m-auto align-items-center">
+    <div class="col-sm-10 col-md-5 col-xl-4 mx-auto">
+      <div class="menu text-center">
+        <h3 class="caption">меню</h3>
+        <ul class="menu-list nav flex-column">
+          <li class="menu-list__item">
+            <a data-toggle="tab" href="#tab-1" class="btn-custom btn-custom-primary btn-custom--rect active">
+              <div class="btn-custom__svg btn-custom__svg--rect">
+                <div class="btn-custom__active-helper">
+                  {{mixins.btnrect()}}
+                  <span class="btn-custom__caption">
+                    ментальная арифметика
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="menu-list__item">
+            <a data-toggle="tab" href="#tab-2" class="btn-custom btn-custom-primary btn-custom--rect">
+              <div class="btn-custom__svg btn-custom__svg--rect">
+                <div class="btn-custom__active-helper">
+                  {{mixins.btnrect()}}
+                  <span class="btn-custom__caption">
+                    скорочтение
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="menu-list__item">
+            <a data-toggle="tab" href="#tab-3" class="btn-custom btn-custom-primary btn-custom--rect">
+              <div class="btn-custom__svg btn-custom__svg--rect">
+                <div class="btn-custom__active-helper">
+                  {{mixins.btnrect()}}
+                  <span class="btn-custom__caption">
+                    Эмоциональный интеллект
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="menu-list__item">
+            <a data-toggle="tab" href="#tab-1" class="btn-custom btn-custom-primary btn-custom--rect">
+              <div class="btn-custom__svg btn-custom__svg--rect">
+                <div class="btn-custom__active-helper">
+                  {{mixins.btnrect()}}
+                  <span class="btn-custom__caption">
+                    Развитие памяти
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-10 col-md-7 col-xl-7 mx-auto ml-md-auto">
+      <div class="tab-content">
+        <div class="tab-pane active show fade in" id="tab-1">
+          <div class="nice-bg nice-bg--clear">
+            <div class="row m-auto justify-content-center">
+              <div class="col-6 col-xl-4 mb-4 text-center">
+                <a href="#" class="btn-custom btn-custom-primary">
+                  <div class="btn-custom__svg">
+                    <div class="btn-custom__active-helper">
+                      {{mixins.btn()}}
+                      <div class="btn-custom__icon">
+                        {{icons.mountain()}}
+                      </div>
+                    </div>
+                  </div>
+                  <span class="btn-custom-text">
+                    мои мисии
+                  </span>
+                </a>
+              </div>
+              <div class="col-6 col-xl-4 mb-4 text-center">
+                <a href="#" class="btn-custom btn-custom-primary">
+                  <div class="btn-custom__svg">
+                    <div class="btn-custom__active-helper">
+                      {{mixins.btn()}}
+                      <div class="btn-custom__icon">
+                        {{icons.controller()}}
+                      </div>
+                    </div>
+                  </div>
+                  <span class="btn-custom-text">
+                    Тренировочная база
+                  </span>
+                </a>
+              </div>
+              <div class="w-100"></div>
+              <div class="col-6 col-xl-4 mb-4 text-center">
+                <a href="#" class="btn-custom btn-custom-primary">
+                  <div class="btn-custom__svg">
+                    <div class="btn-custom__active-helper">
+                      {{mixins.btn()}}
+                      <div class="btn-custom__icon">
+                        {{icons.cup()}}
+                      </div>
+                    </div>
+                  </div>
+                  <span class="btn-custom-text">
+                    Олимпиады
+                  </span>
+                </a>
+              </div>
+              <div class="col-6 col-xl-4 mb-4 text-center">
+                <a href="#" class="btn-custom btn-custom-primary">
+                  <div class="btn-custom__svg">
+                    <div class="btn-custom__active-helper">
+                      {{mixins.btn()}}
+                      <div class="btn-custom__icon">
+                        {{icons.cart()}}
+                      </div>
+                    </div>
+                  </div>
+                  <span class="btn-custom-text">
+                    Оплата
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="tab-2">
+          <div class="nice-bg nice-bg--clear">
+            <div class="row m-auto justify-content-center">
+              <div class="col-6 col-xl-4 mb-4 text-center">
+                <a href="#" class="btn-custom btn-custom-primary">
+                  <div class="btn-custom__svg">
+                    <div class="btn-custom__active-helper">
+                      {{mixins.btn()}}
+                      <div class="btn-custom__icon">
+                        {{icons.mountain()}}
+                      </div>
+                    </div>
+                  </div>
+                  <span class="btn-custom-text">
+                    мои мисии
+                  </span>
+                </a>
+              </div>
+              <div class="col-6 col-xl-4 mb-4 text-center">
+                <a href="#" class="btn-custom btn-custom-primary">
+                  <div class="btn-custom__svg">
+                    <div class="btn-custom__active-helper">
+                      {{mixins.btn()}}
+                      <div class="btn-custom__icon">
+                        {{icons.controller()}}
+                      </div>
+                    </div>
+                  </div>
+                  <span class="btn-custom-text">
+                    Тренировочная база
+                  </span>
+                </a>
+              </div>
+              <div class="w-100"></div>
+              <div class="col-6 col-xl-4 mb-4 text-center">
+                <a href="#" class="btn-custom btn-custom-primary">
+                  <div class="btn-custom__svg">
+                    <div class="btn-custom__active-helper">
+                      {{mixins.btn()}}
+                      <div class="btn-custom__icon">
+                        {{icons.cup()}}
+                      </div>
+                    </div>
+                  </div>
+                  <span class="btn-custom-text">
+                    Олимпиады
+                  </span>
+                </a>
+              </div>
+              <div class="col-6 col-xl-4 mb-4 text-center">
+                <a href="#" class="btn-custom btn-custom-primary">
+                  <div class="btn-custom__svg">
+                    <div class="btn-custom__active-helper">
+                      {{mixins.btn()}}
+                      <div class="btn-custom__icon">
+                        {{icons.cart()}}
+                      </div>
+                    </div>
+                  </div>
+                  <span class="btn-custom-text">
+                    Оплата
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="tab-3">
+          <div class="nice-bg nice-bg--clear">
+            <div class="row m-auto justify-content-center">
+              <div class="col-6 col-xl-4 mb-4 text-center">
+                <a href="#" class="btn-custom btn-custom-primary">
+                  <div class="btn-custom__svg">
+                    <div class="btn-custom__active-helper">
+                      {{mixins.btn()}}
+                      <div class="btn-custom__icon">
+                        {{icons.mountain()}}
+                      </div>
+                    </div>
+                  </div>
+                  <span class="btn-custom-text">
+                    мои мисии
+                  </span>
+                </a>
+              </div>
+              <div class="col-6 col-xl-4 mb-4 text-center">
+                <a href="#" class="btn-custom btn-custom-primary">
+                  <div class="btn-custom__svg">
+                    <div class="btn-custom__active-helper">
+                      {{mixins.btn()}}
+                      <div class="btn-custom__icon">
+                        {{icons.controller()}}
+                      </div>
+                    </div>
+                  </div>
+                  <span class="btn-custom-text">
+                    Тренировочная база
+                  </span>
+                </a>
+              </div>
+              <div class="w-100"></div>
+              <div class="col-6 col-xl-4 mb-4 text-center">
+                <a href="#" class="btn-custom btn-custom-primary">
+                  <div class="btn-custom__svg">
+                    <div class="btn-custom__active-helper">
+                      {{mixins.btn()}}
+                      <div class="btn-custom__icon">
+                        {{icons.cup()}}
+                      </div>
+                    </div>
+                  </div>
+                  <span class="btn-custom-text">
+                    Олимпиады
+                  </span>
+                </a>
+              </div>
+              <div class="col-6 col-xl-4 mb-4 text-center">
+                <a href="#" class="btn-custom btn-custom-primary">
+                  <div class="btn-custom__svg">
+                    <div class="btn-custom__active-helper">
+                      {{mixins.btn()}}
+                      <div class="btn-custom__icon">
+                        {{icons.cart()}}
+                      </div>
+                    </div>
+                  </div>
+                  <span class="btn-custom-text">
+                    Оплата
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="tab-4">
+          <div class="nice-bg nice-bg--clear">
+            <div class="row m-auto justify-content-center">
+              <div class="col-6 col-xl-4 mb-4 text-center">
+                <a href="#" class="btn-custom btn-custom-primary">
+                  <div class="btn-custom__svg">
+                    <div class="btn-custom__active-helper">
+                      {{mixins.btn()}}
+                      <div class="btn-custom__icon">
+                        {{icons.mountain()}}
+                      </div>
+                    </div>
+                  </div>
+                  <span class="btn-custom-text">
+                    мои мисии
+                  </span>
+                </a>
+              </div>
+              <div class="col-6 col-xl-4 mb-4 text-center">
+                <a href="#" class="btn-custom btn-custom-primary">
+                  <div class="btn-custom__svg">
+                    <div class="btn-custom__active-helper">
+                      {{mixins.btn()}}
+                      <div class="btn-custom__icon">
+                        {{icons.controller()}}
+                      </div>
+                    </div>
+                  </div>
+                  <span class="btn-custom-text">
+                    Тренировочная база
+                  </span>
+                </a>
+              </div>
+              <div class="w-100"></div>
+              <div class="col-6 col-xl-4 mb-4 text-center">
+                <a href="#" class="btn-custom btn-custom-primary">
+                  <div class="btn-custom__svg">
+                    <div class="btn-custom__active-helper">
+                      {{mixins.btn()}}
+                      <div class="btn-custom__icon">
+                        {{icons.cup()}}
+                      </div>
+                    </div>
+                  </div>
+                  <span class="btn-custom-text">
+                    Олимпиады
+                  </span>
+                </a>
+              </div>
+              <div class="col-6 col-xl-4 mb-4 text-center">
+                <a href="#" class="btn-custom btn-custom-primary">
+                  <div class="btn-custom__svg">
+                    <div class="btn-custom__active-helper">
+                      {{mixins.btn()}}
+                      <div class="btn-custom__icon">
+                        {{icons.cart()}}
+                      </div>
+                    </div>
+                  </div>
+                  <span class="btn-custom-text">
+                    Оплата
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

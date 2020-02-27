@@ -1,0 +1,18 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="sa-container">
+  {% include "partials/_particle.html" %}
+  <div class="sa-layout vertical">
+    {% include "partials/_header.html" %}
+    <main class="main-content grow">
+      {% block screen_content %}{% endblock %}
+    </main>
+    {% include "partials/_footer.html" %}
+  </div>
+</div>
+{% endblock %}

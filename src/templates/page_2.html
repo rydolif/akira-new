@@ -1,0 +1,87 @@
+{% extends "layouts/_screen_layout.html" %}
+
+{% block screen_content %}
+{% include "partials/_nav.html"%}
+<div class="container my-4 my-xl-1 grow">
+  <div class="nice-bg">
+    <h1 class="nice-bg__caption">текущие миссии</h1>
+    <div class="row w-100 justify-content-center m-auto">
+      <div class="col-6 col-xl-4 mb-4 text-center">
+        <a href="#" class="btn-custom btn-custom-primary">
+          <div class="btn-custom__svg">
+            <div class="btn-custom__active-helper">
+              {{mixins.btn()}}
+              <div class="btn-custom__icon">
+                {{icons.abacus()}}
+              </div>
+            </div>
+            <div class="btn-custom__counter" data-count="2">
+              {{icons.counter()}}
+            </div>
+          </div>
+          <span class="btn-custom-text">
+            флэш - анзан
+          </span>
+        </a>
+      </div>
+      <div class="col-6 col-xl-4 mb-4 text-center">
+        <a href="#" class="btn-custom btn-custom-primary">
+          <div class="btn-custom__svg">
+            <div class="btn-custom__active-helper">
+              {{mixins.btn()}}
+              <div class="btn-custom__icon">
+                {{icons.plus()}}
+              </div>
+            </div>
+            <div class="btn-custom__counter" data-count="2">
+              {{icons.counter()}}
+            </div>
+          </div>
+          <span class="btn-custom-text">
+            флэш карты
+          </span>
+        </a>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-6 col-xl-4 mb-4 text-center">
+        <a href="#" class="btn-custom btn-custom-primary">
+          <div class="btn-custom__svg">
+            <div class="btn-custom__active-helper">
+              {{mixins.btn()}}
+              <div class="btn-custom__icon">
+                {{icons.div()}}
+              </div>
+            </div>
+            <div class="btn-custom__counter" data-count="2">
+              {{icons.counter()}}
+            </div>
+          </div>
+          <span class="btn-custom-text">
+            флэш - анзан 2
+          </span>
+        </a>
+      </div>
+      <div class="col-6 col-xl-4 mb-4 text-center">
+        <a href="#" class="btn-custom btn-custom-primary">
+          <div class="btn-custom__svg">
+            <div class="btn-custom__active-helper">
+              {{mixins.btn()}}
+              <div class="btn-custom__icon">
+                {{icons.calc()}}
+              </div>
+            </div>
+            <div class="btn-custom__counter" data-count="2">
+              {{icons.counter()}}
+            </div>
+          </div>
+          <span class="btn-custom-text">
+            флэш - анзан в столбик
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,33 @@
+---
+title: lvl1
+---
+{% extends "layouts/_screen_no-particle.html" %}
+
+{% block screen_content %}
+
+{# partial example #}
+
+
+
+<div class="profile grow">
+
+  {% include "partials/_nav.html"%}
+
+  <div class="container">
+    <form class="profile__form">
+
+      <h1 class="profile__form_title nice-bg__caption">мой профиль</h1>
+
+      <div class="profile__avatar">
+        <img src="" alt="">
+        <button class="next-btn btn btn-primary">выберите файл</button>
+        <button class="next-btn btn btn-primary">Загрузить</button>
+      </div>
+
+    </form>
+  </div>
+  
+</div>
+
+
+{% endblock %}

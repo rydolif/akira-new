@@ -1,0 +1,27 @@
+---
+title: Index page
+---
+{% extends "layouts/_screen_layout.html" %}
+
+{% block screen_content %}
+{% include "partials/_nav.html"%}
+<div class="container grow my-4">
+  <div class="nice-bg grow">
+    <h1 class="nice-bg__caption">текущие миссии</h1>
+    <div class="row w-100 justify-content-center text-center m-auto">
+      <div class="col-8 col-md-6 col-xl-4 align-self-center">
+        <div class="tooltip-custom mb-5 shake-anim">
+          <p class="tooltip-custom__text text-info text-center">
+            миссия успешно выполнена продолжай в том же духе!
+          </p>
+        </div>
+        <button class="btn btn-sm btn-primary">Продолжить миссию</button>
+      </div>
+      <div class="col-4 col-md-3">
+        <img class="img-fluid" src="img/man-ok.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

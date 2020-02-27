@@ -1,0 +1,110 @@
+{% extends "layouts/_screen_no-particle.html" %}
+
+{% block screen_content %}
+
+<div class="map grow">
+  <canvas class="map__canvas" id="map-canvas"></canvas>
+  <div class="map__cloud">
+    <div class="cloud cloud--1"></div>
+  </div>
+  <div class="map__cloud">
+    <div class="cloud cloud--2"></div>
+  </div>
+  <div class="map__cloud">
+    <div class="cloud cloud--3"></div>
+  </div>
+  <div class="map__cloud">
+    <div class="cloud cloud--4"></div>
+  </div>
+  <div class="map__cloud">
+    <div class="cloud cloud--5"></div>
+  </div>
+  <div class="map__cloud">
+    <div class="cloud cloud--6"></div>
+  </div>
+  <div class="map__item map__item--start-2 point">
+    <a href="#" class="btn-custom btn-custom-primary btn-custom--sm">
+      <div class="btn-custom__svg">
+        <div class="btn-custom__active-helper">
+          {{mixins.btn()}}
+          <div class="btn-custom__icon rotate-180">
+            {{icons.triangle()}}
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="map__item map__item--anim map__item--geese point">
+    <div class="map-item">
+      <div class="map-item__img">
+        <img src="img/geese.png" alt="">
+      </div>
+      <div class="map-item__btn map-item__btn--geese">
+        <a href="#" class="btn-custom btn-custom-primary btn-custom--sm">
+          <div class="btn-custom__svg">
+            <div class="btn-custom__active-helper">
+              {{mixins.btn()}}
+              <span class="btn-custom__caption">
+                1
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <p class="map-item__text">LoremLorem, ipsumLorem.</p>
+    </div>
+  </div>
+  <div class="map__item map__item--anim  map__item--ppl point">
+    <div class="map-item">
+      <div class="map-item__img">
+        <img src="img/ppl.png" alt="">
+      </div>
+      <div class="map-item__btn map-item__btn--ppl">
+        <a href="#" class="btn-custom btn-custom-primary btn-custom--sm">
+          <div class="btn-custom__svg">
+            <div class="btn-custom__active-helper">
+              {{mixins.btn()}}
+              <div class="btn-custom__icon">
+                <div class="icon-bg icon-lock"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="map__item map__item--anim  map__item--travel point">
+    <div class="map-item">
+      <div class="map-item__img">
+        <img src="img/travel.png" alt="">
+      </div>
+      <div class="map-item__btn map-item__btn--travel">
+        <a href="#" class="btn-custom btn-custom-primary btn-custom--sm">
+          <div class="btn-custom__svg">
+            <div class="btn-custom__active-helper">
+              {{mixins.btn()}}
+              <div class="btn-custom__icon">
+                <div class="icon-bg icon-lock"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="map__item map__item--end-2 point">
+    <a href="#" class="btn-custom btn-custom-primary btn-custom--sm">
+      <div class="btn-custom__svg">
+        <div class="btn-custom__active-helper">
+          {{mixins.btn()}}
+          <div class="btn-custom__icon">
+            {{icons.triangle()}}
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+{% endblock %}

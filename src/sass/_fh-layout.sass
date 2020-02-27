@@ -1,0 +1,68 @@
+.sa-container
+  // position: fixed
+  min-height: 100vh
+  overflow-x: hidden
+  overflow-y: hidden
+  border: none
+  transform: translate3d(0, 0, 0)
+  display: flex
+  flex-direction: column
+
+
+.sa-layout
+  display: flex
+  overflow-x: hidden
+  border: none
+  align-self: stretch
+
+  &.content-height
+    height: auto !important
+
+  &.justify-start
+    box-pack: start
+    justify-content: flex-start
+
+  &.justify-end
+    box-pack: end
+    justify-content: flex-end
+
+  &.justify-center
+    box-pack: center
+    justify-content: center
+
+  > div
+    flex-shrink: 0
+    flex-grow: 0
+    flex-basis: auto
+    overflow-y: auto
+    overflow-x: hidden
+
+  &.horizontal
+    box-orient: horizontal
+    box-direction: normal
+    flex-direction: row
+    flex: 1
+
+  &.vertical
+    box-orient: vertical
+    box-direction: normal
+    flex-direction: column
+    flex: 1
+
+  .grow
+    flex-grow: 1
+    flex-shrink: 1
+    display: flex
+    flex-direction: column
+
+    > div
+      flex-shrink: 0
+
+  .shrink, .wrap-container
+    flex-shrink: 1
+
+  &.wrap
+    box-lines: multiple
+    flex-wrap: wrap
+
+/*# sourceMappingURL=snappyapps-layout.css.map

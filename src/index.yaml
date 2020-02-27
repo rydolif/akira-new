@@ -1,0 +1,43 @@
+ProjectTitle: akira-redesign
+
+PageList:
+  - file: page_x_2.html
+    ready: 50
+  - file: page_x.html
+    ready: 50
+  - file: page_0.html
+    ready: 50
+  - file: page.html
+    ready: 50
+  - file: page_lvl1.html
+    ready: 50
+  - file: page_lvl2.html
+    ready: 50
+  - file: page_lvl3.html
+    ready: 50
+  - file: page_lvl4.html
+    ready: 50
+  - file: page_lvl5.html
+    ready: 50
+  - file: page_1.html
+    ready: 50
+  - file: page_2.html
+    ready: 50
+  - file: page_3.html
+    ready: 50
+  - file: page_4.html
+    ready: 50
+  - file: page_4_1.html
+    ready: 50
+  - file: page_5.html
+    ready: 50
+  - file: page_6.html
+    ready: 50
+  - file: page_7.html
+    ready: 50
+  - file: page_8.html
+    ready: 50
+  - file: page_9.html
+    ready: 50
+  - file: page_profile.html
+    ready: 50

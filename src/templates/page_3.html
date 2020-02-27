@@ -1,0 +1,80 @@
+---
+title: Index page
+---
+{% extends "layouts/_screen_layout.html" %}
+
+{% block screen_content %}
+{% include "partials/_nav.html"%}
+<div class="container my-4 grow">
+  <div class="nice-bg">
+    <h1 class="nice-bg__caption">Тренировочная база</h1>
+    <div class="row justify-content-center">
+      <div class="col-6 col-xl-4 mb-4 text-center">
+        <a href="#" class="btn-custom btn-custom-primary">
+          <div class="btn-custom__svg" data-toggle="popover" data-placement="top"
+            data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab">
+            <div class="btn-custom__active-helper">
+              {{mixins.btn()}}
+              <div class="btn-custom__icon">
+                {{icons.abacus()}}
+              </div>
+            </div>
+          </div>
+          <span class="btn-custom-text">
+            флэш - анзан
+          </span>
+        </a>
+      </div>
+      <div class="col-6 col-xl-4 mb-4 text-center">
+        <a href="#" class="btn-custom btn-custom-primary disabled">
+          <div class="btn-custom__svg" data-toggle="popover" data-placement="bottom"
+            data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab">
+            <div class="btn-custom__active-helper">
+              {{mixins.btn()}}
+              <div class="btn-custom__icon">
+                {{icons.plus()}}
+              </div>
+            </div>
+          </div>
+          <span class="btn-custom-text">
+            флэш карты
+          </span>
+        </a>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-6 col-xl-4 mb-4 text-center">
+        <a href="#" class="btn-custom btn-custom-primary">
+          <div class="btn-custom__svg" data-toggle="popover" data-placement="right"
+            data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab">
+            <div class="btn-custom__active-helper">
+              {{mixins.btn()}}
+              <div class="btn-custom__icon">
+                {{icons.div()}}
+              </div>
+            </div>
+          </div>
+          <span class="btn-custom-text">
+            флэш - анзан 2
+          </span>
+        </a>
+      </div>
+      <div class="col-6 col-xl-4 mb-4 text-center">
+        <a href="#" class="btn-custom btn-custom-primary">
+          <div class="btn-custom__svg" data-toggle="popover" data-placement="left"
+            data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab">
+            <div class="btn-custom__active-helper">
+              {{mixins.btn()}}
+              <div class="btn-custom__icon">
+                {{icons.calc()}}
+              </div>
+            </div>
+          </div>
+          <span class="btn-custom-text">
+            флэш - анзан в столбик
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

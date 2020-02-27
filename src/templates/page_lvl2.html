@@ -1,0 +1,46 @@
+---
+bg: lvl2
+---
+{% extends "layouts/_screen_no-particle.html" %}
+
+{% block screen_content %}
+
+
+{% include "partials/_nav.html"%}
+<div class="container grow my-4">
+  <div class="grid grow">
+    <div class="row w-100 m-auto align-items-center">
+      {% for i in range(0, 4 ) %}
+      <div class="col-6 col-sm-4 text-center px-3 col-md-3 mb-2 mb-lg-4">
+        <a href="#" class="btn-custom btn-custom-purple">
+          <div class="btn-custom__svg">
+            <div class="btn-custom__active-helper">
+              {{mixins.btn()}}
+              <div class="btn-custom__icon">
+                <div class="icon-bg icon-star"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {%endfor%}
+      {% for i in range(0, 12) %}
+      <div class="col-6 col-sm-4 text-center px-3 col-md-3 mb-2 mb-lg-4">
+        <a href="#" class="btn-custom btn-custom-purple">
+          <div class="btn-custom__svg">
+            <div class="btn-custom__active-helper">
+              {{mixins.btn()}}
+              <div class="btn-custom__icon">
+                <div class="icon-bg icon-lock"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

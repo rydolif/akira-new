@@ -1,0 +1,90 @@
+{% extends "layouts/_screen_layout.html" %}
+
+{% block screen_content %}
+{% include "partials/_nav.html"%}
+<div class="container grow my-2">
+  <div class="nice-bg grow">
+    <h1 class="nice-bg__caption">рейтинг учеников</h1>
+    <div
+      class="d-flex flex-column flex-md-row px-3 px-sm-5 my-4 mt-xl-0 w-100 align-items-center justify-content-between">
+      <div role="tablist" class="tabs-custom nav p-0">
+        <a data-toggle="tab" role="tab" href="#local"
+          class="active tabs-custom__item btn btn-tab mb-2 mb-md-0">школьный</a>
+        <a data-toggle="tab" role="tab" href="#global" class="tabs-custom__item btn btn-tab mb-2 mb-md-0">Глобальный</a>
+      </div>
+
+      <div class="mt-2 mt-md-0 ml-md-auto current-rating add-star-anim">
+        371
+      </div>
+    </div>
+
+    <div class="tab-content mx-auto w-100 px-3 px-md-5">
+      <div class="tab-pane fade show active" id="local">
+        <div class="table-scroll">
+          <div class="table-custom">
+            <div class="table-custom__head">
+              <div class="table-custom__item-head">место</div>
+              <div class="table-custom__item-head">ученик</div>
+              <div class="table-custom__item-head">год рождения</div>
+              <div class="table-custom__item-head">баллы </div>
+            </div>
+            <div data-simplebar class="table-custom__body">
+              <div class="table-custom__scrollable">
+                {% for i in range(30)%}
+                <div class="table-custom__row">
+                  <div class="table-custom__item">1</div>
+                  <div class="table-custom__item">
+                    <div class="avatar-icon">
+                      <i></i>Иванов Сергей
+                    </div>
+                  </div>
+                  <div class="table-custom__item date">1992</div>
+                  <div class="table-custom__item rating">
+                    <div class="rating-icon">
+                      <i></i>55643
+                    </div>
+                  </div>
+                </div>
+                {%endfor%}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="global">
+        <div class="table-scroll">
+          <div class="table-custom">
+            <div class="table-custom__head">
+              <div class="table-custom__item-head">место</div>
+              <div class="table-custom__item-head">ученик</div>
+              <div class="table-custom__item-head">год рождения</div>
+              <div class="table-custom__item-head">баллы </div>
+            </div>
+            <div data-simplebar class="table-custom__body">
+              <div class="table-custom__scrollable">
+                {% for i in range(30)%}
+                <div class="table-custom__row">
+                  <div class="table-custom__item">2</div>
+                  <div class="table-custom__item">
+                    <div class="avatar-icon">
+                      <i style="background-image: url(../img/avatar-1.png);"></i>Иванов Сергей
+                    </div>
+                  </div>
+                  <div class="table-custom__item date">1992</div>
+                  <div class="table-custom__item rating">
+                    <div class="rating-icon">
+                      <i></i>55643
+                    </div>
+                  </div>
+                </div>
+                {%endfor%}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

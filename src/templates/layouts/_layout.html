@@ -1,0 +1,39 @@
+{% import "partials/_mixins.html" as mixins %}
+{% import "partials/_icons.html" as icons %}
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" media="all" href="css/app.css" />
+  {# {% include "../partials/_media-tags.html" %} #}
+</head>
+
+<body>
+
+  <!-- BEGIN content -->
+  <div class="out">
+    {% block content %}{% endblock %}
+  </div>
+  <!-- END content -->
+
+
+  <audio class="d-none" id="btn-hover-sound" controls preload="auto">
+    <source src="audio/btn-active-sound.mp3" />
+    Your browser isn't invited for super fun time.
+  </audio>
+
+  <audio class="d-none" id="btn-active-sound" controls preload="auto">
+    <source src="audio/btn-hover-sound.mp3" />
+    Your browser isn't invited for super fun time.
+  </audio>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

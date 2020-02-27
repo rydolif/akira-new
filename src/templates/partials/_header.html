@@ -1,0 +1,32 @@
+<header class="main-header">
+  <div class="container-fluid">
+    <div class="row align-items-center text-center text-md-left">
+      <div class="col-sm-auto mb-3 mb-sm-0">
+        <div class="logo">
+          <a href="/" class="d-inline-block">
+            <img src="img/logo.png" alt="akira">
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-auto d-none d-md-block">
+        <a href="#" class="btn btn-primary text-secondary d-flex align-items-center">
+          <i class="icon icon-back"></i>
+          На главную
+        </a>
+      </div>
+      <div class="col-sm-auto ml-auto">
+        <div class="dropdown d-inline-block">
+          <button class="btn btn-primary btn-sm dropdown-toggle pl-5" data-offset="0,40" type="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i style="background-image: url('img/avatar-palceholder.png');" class="avatar"></i>
+            Сидоров Петр
+          </button>
+          <div class="dropdown-menu dropdown-menu-primary fade text-right">
+            <button class="dropdown-item dropdown-item--icon" type="button">{{mixins.icon('gear')}}Настройки</button>
+            <button class="dropdown-item dropdown-item--icon" type="button">{{mixins.icon('log-out')}}Выход</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

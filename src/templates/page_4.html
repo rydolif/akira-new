@@ -1,0 +1,57 @@
+{% extends "layouts/_screen_layout.html" %}
+
+{% block screen_content %}
+{% include "partials/_nav.html"%}
+<div class="container my-4 grow">
+  <div class="nice-bg grow">
+    <h1 class="nice-bg__caption">мои миссии</h1>
+    <div class="row w-100 justify-content-center m-auto">
+      <div class="col-6 col-md-4 mb-4 md-md-0 text-center">
+        <a href="#" class="btn-custom btn-custom-primary">
+          <div class="btn-custom__svg">
+            <div class="btn-custom__active-helper">
+              {{mixins.btn()}}
+              <div class="btn-custom__icon">
+                {{icons.mountain()}}
+              </div>
+            </div>
+          </div>
+          <span class="btn-custom-text">
+            Текущие мисии
+          </span>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 mb-4 md-md-0 text-center">
+        <a href="#" class="btn-custom btn-custom-primary">
+          <div class="btn-custom__svg">
+            <div class="btn-custom__active-helper">
+              {{mixins.btn()}}
+              <div class="btn-custom__icon">
+                {{icons.stars()}}
+              </div>
+            </div>
+          </div>
+          <span class="btn-custom-text">
+            Рейтинг
+          </span>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 mb-4 md-md-0 text-center">
+        <a href="#" class="btn-custom btn-custom-primary">
+          <div class="btn-custom__svg">
+            <div class="btn-custom__active-helper">
+              {{mixins.btn()}}
+              <div class="btn-custom__icon">
+                {{icons.medal()}}
+              </div>
+            </div>
+          </div>
+          <span class="btn-custom-text">
+            мои достижения
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
