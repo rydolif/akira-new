@@ -1,0 +1,196 @@
+---
+title: lvl1
+---
+{% extends "layouts/_screen_no-particle.html" %}
+
+{% block screen_content %}
+
+{# partial example #}
+
+
+
+<div class="result profile grow">
+
+  {% include "partials/_nav.html"%}
+
+  <div class="container">
+
+    <div class="result__table profile__table">
+      <h1 class="nice-bg__caption">Результаты олимпиады</h1>
+
+      <div class="profile__table_wrap tabs">
+
+        <div class="profile__table_tabs">
+          <ul>
+            <li><a href="#one" class="next-btn btn btn-primary">Отборочный тур</a></li>
+            <li><a href="#two" class="next-btn btn btn-primary">Скорочтение</a></li>
+          </ul>
+        </div>
+
+        <div id="one" class="tabs__wrap">
+          <table>
+            <tr>
+              <th rowspan="2" class="grid__td--pink">ФИ</th>
+              <th rowspan="2" class="grid__td--pink">Подгруппа</th>
+              <th colspan="3" class="grid__td--green">1 этап</th>
+              <th colspan="3" class="grid__td--green">2 этап</th>
+              <th colspan="3" class="grid__td--green">3 этап</th>
+              <th rowspan="2" class="grid__td--pink">Баллы</th>
+              <th rowspan="2" class="grid__td--pink">Детали</th>
+              <th rowspan="2" class="grid__td--pink">Место</th>
+              <th rowspan="2" class="grid__td--pink">Сертификат</th>
+            </tr>
+            <tr>
+              <th>Анзан</th>
+              <th>Анзан в стобик</th>
+              <th>Анзан 2</th>
+              <th>Анзан</th>
+              <th>Анзан в стобик</th>
+              <th>Анзан 2</th>
+              <th>Анзан</th>
+              <th>Анзан в стобик</th>
+              <th>Анзан 2</th>
+            </tr>
+            <tr>
+              <td data-text="ФИ">Сидоров П.</td>
+              <td data-text="Подгруппа">Тинс</td>
+              <td data-text="1 этап - Анзан">16</td>
+              <td data-text="1 этап - Анзан в стобик">11</td>
+              <td data-text="1 этап - Анзан 2">-</td>
+              <td data-text="1 этап - Анзан">13</td>
+              <td data-text="1 этап - Анзан в стобик">24</td>
+              <td data-text="1 этап - Анзан 2">12</td>
+              <td data-text="1 этап - Анзан">18</td>
+              <td data-text="1 этап - Анзан в стобик">5</td>
+              <td data-text="1 этап - Анзан 2">-</td>
+              <td data-text="Баллы"><b>15</b></td>
+              <td data-text="Детали"><a href="#">Детали</a></td>
+              <td data-text="Место">14</td>
+              <td data-text="Сертификат"><a href="#">Скачать</a></td>
+            </tr>
+            <tr>
+              <td data-text="ФИ">Сидоров П.</td>
+              <td data-text="Подгруппа">Тинс</td>
+              <td data-text="1 этап - Анзан">16</td>
+              <td data-text="1 этап - Анзан в стобик">11</td>
+              <td data-text="1 этап - Анзан 2">-</td>
+              <td data-text="1 этап - Анзан">13</td>
+              <td data-text="1 этап - Анзан в стобик">24</td>
+              <td data-text="1 этап - Анзан 2">12</td>
+              <td data-text="1 этап - Анзан">18</td>
+              <td data-text="1 этап - Анзан в стобик">5</td>
+              <td data-text="1 этап - Анзан 2">-</td>
+              <td data-text="Баллы"><b>15</b></td>
+              <td data-text="Детали"><a href="#">Детали</a></td>
+              <td data-text="Место">14</td>
+              <td data-text="Сертификат"><a href="#">Скачать</a></td>
+            </tr>
+            <tr>
+              <td data-text="ФИ">Сидоров П.</td>
+              <td data-text="Подгруппа">Тинс</td>
+              <td data-text="1 этап - Анзан">16</td>
+              <td data-text="1 этап - Анзан в стобик">11</td>
+              <td data-text="1 этап - Анзан 2">-</td>
+              <td data-text="1 этап - Анзан">13</td>
+              <td data-text="1 этап - Анзан в стобик">24</td>
+              <td data-text="1 этап - Анзан 2">12</td>
+              <td data-text="1 этап - Анзан">18</td>
+              <td data-text="1 этап - Анзан в стобик">5</td>
+              <td data-text="1 этап - Анзан 2">-</td>
+              <td data-text="Баллы"><b>15</b></td>
+              <td data-text="Детали"><a href="#">Детали</a></td>
+              <td data-text="Место">14</td>
+              <td data-text="Сертификат"><a href="#">Скачать</a></td>
+            </tr>
+          </table>
+        </div>
+        
+        <div id="two" class="tabs__wrap">
+          <table>
+            <tr>
+              <th rowspan="2" class="grid__td--pink">ФИ</th>
+              <th rowspan="2" class="grid__td--pink">Подгруппа</th>
+              <th colspan="3" class="grid__td--green">1 этап</th>
+              <th colspan="3" class="grid__td--green">2 этап</th>
+              <th colspan="3" class="grid__td--green">3 этап</th>
+              <th rowspan="2" class="grid__td--pink">Баллы</th>
+              <th rowspan="2" class="grid__td--pink">Детали</th>
+              <th rowspan="2" class="grid__td--pink">Место</th>
+              <th rowspan="2" class="grid__td--pink">Сертификат</th>
+            </tr>
+            <tr>
+              <th>Анзан</th>
+              <th>Анзан в стобик</th>
+              <th>Анзан 2</th>
+              <th>Анзан</th>
+              <th>Анзан в стобик</th>
+              <th>Анзан 2</th>
+              <th>Анзан</th>
+              <th>Анзан в стобик</th>
+              <th>Анзан 2</th>
+            </tr>
+            <tr>
+              <td data-text="ФИ">Сидоров П.</td>
+              <td data-text="Подгруппа">Тинс</td>
+              <td data-text="1 этап - Анзан">16</td>
+              <td data-text="1 этап - Анзан в стобик">11</td>
+              <td data-text="1 этап - Анзан 2">-</td>
+              <td data-text="1 этап - Анзан">13</td>
+              <td data-text="1 этап - Анзан в стобик">24</td>
+              <td data-text="1 этап - Анзан 2">12</td>
+              <td data-text="1 этап - Анзан">18</td>
+              <td data-text="1 этап - Анзан в стобик">5</td>
+              <td data-text="1 этап - Анзан 2">-</td>
+              <td data-text="Баллы"><b>15</b></td>
+              <td data-text="Детали"><a href="#">Детали</a></td>
+              <td data-text="Место">14</td>
+              <td data-text="Сертификат"><a href="#">Скачать</a></td>
+            </tr>
+            <tr>
+              <td data-text="ФИ">Сидоров П.</td>
+              <td data-text="Подгруппа">Тинс</td>
+              <td data-text="1 этап - Анзан">16</td>
+              <td data-text="1 этап - Анзан в стобик">11</td>
+              <td data-text="1 этап - Анзан 2">-</td>
+              <td data-text="1 этап - Анзан">13</td>
+              <td data-text="1 этап - Анзан в стобик">24</td>
+              <td data-text="1 этап - Анзан 2">12</td>
+              <td data-text="1 этап - Анзан">18</td>
+              <td data-text="1 этап - Анзан в стобик">5</td>
+              <td data-text="1 этап - Анзан 2">-</td>
+              <td data-text="Баллы"><b>15</b></td>
+              <td data-text="Детали"><a href="#">Детали</a></td>
+              <td data-text="Место">14</td>
+              <td data-text="Сертификат"><a href="#">Скачать</a></td>
+            </tr>
+            <tr>
+              <td data-text="ФИ">Сидоров П.</td>
+              <td data-text="Подгруппа">Тинс</td>
+              <td data-text="1 этап - Анзан">16</td>
+              <td data-text="1 этап - Анзан в стобик">11</td>
+              <td data-text="1 этап - Анзан 2">-</td>
+              <td data-text="1 этап - Анзан">13</td>
+              <td data-text="1 этап - Анзан в стобик">24</td>
+              <td data-text="1 этап - Анзан 2">12</td>
+              <td data-text="1 этап - Анзан">18</td>
+              <td data-text="1 этап - Анзан в стобик">5</td>
+              <td data-text="1 этап - Анзан 2">-</td>
+              <td data-text="Баллы"><b>15</b></td>
+              <td data-text="Детали"><a href="#">Детали</a></td>
+              <td data-text="Место">14</td>
+              <td data-text="Сертификат"><a href="#">Скачать</a></td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+  
+</div>
+
+
+{% endblock %}

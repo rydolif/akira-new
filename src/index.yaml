@@ -1,6 +1,10 @@
 ProjectTitle: akira-redesign
 
 PageList:
+  - file: result.html
+    ready: 50
+  - file: сongratulations.html
+    ready: 50
   - file: page_x_2.html
     ready: 50
   - file: page_x.html

@@ -1198,8 +1198,6 @@ body
 
 
 //-------------------------------------------------------------
-
-
 .profile
   background-image: url(../img/bg_profile.jpg)
   background-repeat: no-repeat
@@ -1508,7 +1506,6 @@ body
       +r(850)
         justify-content: space-around
 
-
       .profile__content_line
         width: 50%
         justify-content: flex-end
@@ -1634,4 +1631,61 @@ body
       box-shadow: inset 3px 3px 0px rgba(#93c0bc, 0.9)
 
 
+.сongratulations
+
+	&__wrap
+		position: relative
+		max-width: 50%
+		margin: 50px auto
+
+.result
+  +r(1650)
+    zoom: 80%
+
+  h1
+    margin-bottom: 0
+
+  .profile__table_tabs
+    margin-bottom: 15px
+
+  &__table
+    margin:
+      top: 50px
+    font-size: 14px
+
+
+    table
+      margin-bottom: 0
+
+    td, th
+      padding: 7px
+
+    +r(1200)
+      table
+        font-size: 12px
+            
+    +r(993)
+      margin-bottom: 10px
+
+      table, thead, tbody, th, td, tr
+        display: block
+
+      th
+        display: none
+
+      tr
+        margin-bottom: 15px
+
+        &:first-child
+          display: none
+
+      td
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 5px 15px
+
+        &::before
+          content: attr(data-text)
+          width: 70%
 
