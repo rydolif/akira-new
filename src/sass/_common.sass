@@ -1631,13 +1631,6 @@ body
       box-shadow: inset 3px 3px 0px rgba(#93c0bc, 0.9)
 
 
-.сongratulations
-
-	&__wrap
-		position: relative
-		max-width: 50%
-		margin: 50px auto
-
 .result
   +r(1650)
     zoom: 80%
@@ -1688,4 +1681,242 @@ body
         &::before
           content: attr(data-text)
           width: 70%
+
+
+.olimpiady
+  +r(1650)
+    zoom: 80%
+
+  .btn
+    letter-spacing: 1px
+
+  h3
+    color: #fcc223
+    font-size: 25px
+    margin-bottom: 0
+
+    +r(992)
+      font-size: 20px
+
+  &__battle
+    position: relative
+    margin-bottom: 75px
+
+    +r(992)
+      margin-bottom: 30px
+
+    img
+      width: 100%
+      height: auto
+
+    .btn
+      position: absolute
+      bottom: 40px
+      left: 50%
+      transform: translate(-50%, 0)
+      background-color: #fcc223
+      box-shadow: 2.5px 5.5px 0 0 #de9812
+      color: #fff !important
+      border-color: #fcc223
+
+      &:hover,
+      &:focus
+        color: #fff !important
+        background-color: #fcc223 !important
+        border-color: #fcc223 !important
+
+      &:active
+        transform: translate(-49.5%, 5px) !important
+        box-shadow: 2.5px 2.5px 0 0 #de9812 !important
+
+  &__content
+    position: relative
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    border-radius: 15px
+
+    &_img
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translate(-50%, 0)
+      z-index: -1
+
+    &_col
+      width: 49%
+      margin-bottom: 20px
+
+      &:last-child
+        margin-bottom: 0
+
+      +r(700)
+        width: 100%
+
+    &_title
+      width: 100%
+      display: flex
+      align-items: center
+      margin-bottom: 40px
+
+      +r(992)
+        margin-bottom: 15px
+
+      +r(700)
+        justify-content: center
+      
+      img
+        width: 55px
+        margin-right: 20px
+
+    &_item
+      position: relative
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
+      width: 100%
+      margin-bottom: 25px
+      background-color: #9247c4
+      border-radius: 30px
+      border: 7px solid #b072da
+      box-shadow: inset 0 6px 0px rgba(#8a31b2, 0.9)
+      padding: 30px 70px
+      z-index: 1
+
+      &:last-child
+        margin-bottom: 0
+
+      +r(992)
+        padding: 25px
+
+      +r(700)
+        max-width: 480px
+        margin: 0 auto 15px
+
+      +r(480)
+        padding: 15px
+
+
+      div
+        max-width: 58%
+
+        &:nth-child(2)
+          max-width: 40%
+          text-align: right
+          margin-bottom: 0
+
+      h4
+        font-size: 24px
+        font-weight: 400
+        color: #fff
+
+        +r(992)
+          font-size: 18px
+
+        b
+          font-weight: 700
+
+      p
+        font-size: 18px
+        color: #4ae6d6
+        letter-spacing: 1px
+
+        +r(992)
+          font-size: 14px
+
+      a
+        color: #fff
+        width: 100%
+        max-width: 170px
+        background-color: #4ae6d6 !important
+        box-shadow: 2.5px 5.5px 0 0 #30aea1 !important
+        color: #fff !important
+        border-color: #4ae6d6
+        padding-left: 0
+        padding-right: 0
+        margin-bottom: 20px
+
+        &:nth-child(2)
+          margin-bottom: 0 !important
+
+        &:hover,
+        &:focus
+          color: #fff !important
+          background-color: #f43ddb !important
+          border-color: #f43ddb !important
+          box-shadow: 2.5px 5.5px 0 0 #a51391 !important
+
+        &:active
+          box-shadow: 2.5px 2.5px 0 0 #a51391 !important
+
+      &--resault
+        background-color: #b072da
+        border-color: #c4a3db
+        box-shadow: inset 0 6px 0px rgba(#a64fc6, 0.9)
+
+
+.сongratulations
+  &__wrap
+    position: relative
+    max-width: 50%
+    margin: 50px auto
+    text-transform: uppercase
+    color: #30aea1
+    line-height: 1.6
+    text-align: center 
+
+    +r(800)
+      max-width: 60%
+      padding: 0
+
+    +r(800)
+      max-width: 90%
+
+    +r(400)
+      max-width: 100%
+
+    p
+      display: block
+      width: 100%
+      margin-bottom: 0
+    a
+      color: #f43ddb
+
+    &_text
+      font-size: 20px
+
+      +r(1650)
+        font-size: 16px
+
+      +r(800)
+        font-size: 14px
+
+    &_link
+      margin-bottom: 1em !important
+      font-size: 20px
+
+      +r(1650)
+        font-size: 16px
+
+      +r(800)
+        font-size: 14px
+
+    &_sub-title
+      margin-bottom: 0
+      text-align: center
+      font-size: 30px
+      color: #fff
+      letter-spacing: 1px
+
+      +r(1650)
+        font-size: 22px
+
+      +r(800)
+        font-size: 18px
+
+      +r(400)
+        font-size: 16px
+
+
 
