@@ -1646,7 +1646,6 @@ body
       top: 50px
     font-size: 14px
 
-
     table
       margin-bottom: 0
 
@@ -1705,6 +1704,11 @@ body
     +r(992)
       margin-bottom: 30px
 
+    +r(768)
+      max-width: 400px
+      display: block
+      margin: 0 auto
+
     img
       width: 100%
       height: auto
@@ -1718,6 +1722,12 @@ body
       box-shadow: 2.5px 5.5px 0 0 #de9812
       color: #fff !important
       border-color: #fcc223
+
+      +r(768)
+        width: 80%
+        padding-left: 0
+        padding-right: 0
+        bottom: 70px
 
       &:hover,
       &:focus
@@ -1864,11 +1874,11 @@ body
     text-transform: uppercase
     color: #30aea1
     line-height: 1.6
-    text-align: center 
+    text-align: center
 
-    +r(800)
+    +r(992)
       max-width: 60%
-      padding: 0
+      padding: 0 0 20px 0
 
     +r(800)
       max-width: 90%
@@ -1878,10 +1888,32 @@ body
 
     p
       display: block
+      margin: 0 auto
       width: 100%
-      margin-bottom: 0
-    a
-      color: #f43ddb
+
+      +r(800)
+        max-width: 90%
+      a
+        color: #f43ddb
+
+    &_content
+      background-color: #fff
+      color: #30aea1
+      padding: 30px
+      border-radius: 15px
+      font-size: 14px
+      text-align: left !important
+      margin: 
+        top: 40px !important
+        bottom: 55px !important
+      box-shadow: inset 4px 4px 0 rgba(#93c0bc, .9)
+
+      +r(992)
+        padding: 15px
+        max-width: 90%
+        margin: 
+          top: 20px !important
+          bottom: 20px !important
 
     &_text
       font-size: 20px
@@ -1917,6 +1949,40 @@ body
 
       +r(400)
         font-size: 16px
+
+    &--tour
+      max-width: 55%
+      padding: 
+        left: 65px
+        right: 65px
+
+      +r(992)
+        padding: 0 0 20px 0
+        max-width: 70%
+
+      +r(800)
+        max-width: 90%
+
+      +r(400)
+        max-width: 100%
+
+      &_decor
+        position: absolute
+        bottom: -50px
+        right: 30px
+
+        +r(1650)
+          width: 80px
+          bottom: -35px
+
+        +r(992)
+          display: none
+
+      .btn
+        margin: 0 auto
+        color: #fff !important
+        max-width: 260px
+        width: 100%
 
 
 
