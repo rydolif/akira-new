@@ -1950,39 +1950,95 @@ body
       +r(400)
         font-size: 16px
 
-    &--tour
-      max-width: 55%
-      padding: 
-        left: 65px
-        right: 65px
+  &--tour
+    max-width: 55%
+    padding: 
+      left: 65px
+      right: 65px
+
+    +r(992)
+      padding: 0 0 20px 0
+      max-width: 70%
+
+    +r(800)
+      max-width: 90%
+
+    +r(400)
+      max-width: 100%
+
+    &__decor
+      position: absolute
+      bottom: -50px
+      right: 30px
+
+      +r(1650)
+        width: 80px
+        bottom: -35px
 
       +r(992)
-        padding: 0 0 20px 0
-        max-width: 70%
+        display: none
 
-      +r(800)
-        max-width: 90%
+    .btn
+      margin: 0 auto
+      color: #fff !important
+      max-width: 260px
+      width: 100%
+   
+  &--star
+    padding-bottom: 70px
+    display: flex
+    flex-direction: column
 
-      +r(400)
-        max-width: 100%
+    &__content
+      position: relative
+      margin:
+        top: 85px !important
+        bottom: 15px !important
+      background-color: #fff
+      color: #30aea1
+      border-radius: 10px
+      box-shadow: inset 2px 2px 0 rgba(#93c0bc, .9)
+      max-width: 270px !important
+      padding: 50px 10px 40px
+      font-size: 20px
 
-      &_decor
+      +r(992)
+
+    
+    &__svg
+      display: block
+      position: absolute
+      top: -65px
+      left: -50%
+      transform: translate(50%, 0)
+      width: 270px
+
+      svg
         position: absolute
-        bottom: -50px
-        right: 30px
+        width: 80px
+        height: 80px
 
-        +r(1650)
-          width: 80px
-          bottom: -35px
+        &:nth-child(1)
+          top: 23px
+          left: 25px
 
-        +r(992)
-          display: none
+        &:nth-child(2)
+          left: 95px
 
-      .btn
-        margin: 0 auto
-        color: #fff !important
-        max-width: 260px
-        width: 100%
+        &:nth-child(3)
+           top: 23px
+           left: 165px
+    
+    .btn
+      margin: 0 auto
+      color: #fff !important
+      max-width: 260px
+      width: 100%
+
+  canvas
+    height: 100%
+    width: 100%
+    position: absolute
 
 
 
