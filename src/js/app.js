@@ -352,8 +352,8 @@ $('.tabs ul a:first').addClass('active');
     if(frameId % 3 == 0) {
         new Dot(canvas.width*Math.random()-canvas.width+canvas.width/2*Math.random(), -canvas.height/2, -1 * getRandom(1, 3),  getRandom(2, 4),"#f43ddb");
         new Dot(canvas.width*Math.random()-canvas.width+canvas.width*Math.random(), -canvas.height/2, getRandom(1, 3),  getRandom(2, 4),"#ED1A3D");
-        new Dot(canvas.width*Math.random()-canvas.width+canvas.width/2*Math.random(), -canvas.height/2, getRandom(1, 3),  getRandom(2, 4),"#fff");
-        new Dot(canvas.width*Math.random()+canvas.width-canvas.width*Math.random(), -canvas.height/1, getRandom(1, 3),  getRandom(2, 4),"#ffc30c");
+        new Dot(canvas.width*Math.random()-canvas.width+canvas.width/2*Math.random(), -canvas.height/2, getRandom(1, 3),  getRandom(2, 4),"#ffc30c");
+        new Dot(canvas.width*Math.random()+canvas.width-canvas.width*Math.random(), -canvas.height/1, getRandom(1, 3),  getRandom(2, 4),"#fff");
     }
     for(var i in particles){
       particles[i].draw();

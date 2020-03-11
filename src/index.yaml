@@ -11,6 +11,9 @@ PageList:
     ready: 50
   - file: star.html
     ready: 50
+  - file: chat.html
+    ready: 50
+
   # - file: page_x_2.html
   #   ready: 50
   # - file: page_x.html

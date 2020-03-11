@@ -1,6 +1,7 @@
 body
   line-height: 1.4
   font-family: $base-ff
+  min-width: 320px
 
 .container-fluid
   max-width: 1800px
@@ -2039,6 +2040,137 @@ body
     height: 100%
     width: 100%
     position: absolute
+
+
+.chat
+
+  +r(1650)
+    zoom: 80%
+
+  &__wrap
+    width: 100%
+    padding:
+      left: 25px
+      right: 25px
+      bottom: 40px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 20px
+
+    +r(700)
+      padding-left: 0
+      padding-right: 0
+      justify-content: space-around
+
+  h1
+    +r(1400)
+      font-size: 18px
+
+  &__scroll
+    width: 48%
+    height: 210px
+    font-size: 16px
+    color: #30aea1
+    padding: 25px 75px 45px 25px
+
+    +r(700)
+      padding: 15px 35px 25px 15px
+      font-size: 14px
+
+    +r(576)
+      width: 90% !important
+      margin: 0 auto 15px
+
+    b
+      text-transform: uppercase
+      font-size: 18px
+      color: #03666d
+  
+  &__form
+    width: 48%
+    padding-top: 0
+
+    +r(576)
+      width: 90%
+      max-width: 90%
+      margin: 0 auto
+
+    .profile__content_line
+      flex-wrap: nowrap
+
+    label
+      min-width: 120px
+
+    input
+      max-width: 530px
+      padding-left: 30px
+
+      +r(1650)
+        max-width: 80%
+  
+  &__container
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  
+  &__col
+    width: 48%
+
+    +r(576)
+      width: 100%
+      margin: 0 auto 15px
+
+  &__bunner
+    max-width: 100%
+
+    +r(576)
+      max-width: 480px
+      width: 100%
+      display: block
+      margin: 0 auto
+
+
+  &__item
+    align-items: center
+    padding: 30px
+
+    +r(990)
+      padding: 15px
+      margin-bottom: 15px
+
+    p
+      font-size: 16px
+
+    div
+      width: 58%
+      max-width: 100%
+
+      &:nth-child(2)
+        width: 40%
+
+    a
+      position: relative
+      margin-bottom: 20px
+      max-width: 100%
+
+      &:nth-child(2)
+        margin-bottom: 20px !important
+
+      &:nth-child(3)
+        margin-bottom: 0
+
+      img
+        position: absolute
+        top: 50%
+        left: 75%
+        transform: translate(0, -50%)
+
+        +r(990)
+          width: 25px
+
+
+
 
 
 
