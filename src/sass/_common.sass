@@ -2170,7 +2170,135 @@ body
           width: 25px
 
 
+.one
 
+	&__list
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		padding-top: 5vh
 
+	&__item
+		max-width: 48%
+		display: flex
+		justify-content: center
+		text-align: left !important
+		min-width: 400px
+		padding: 0
+
+		img
+			width: 100%
+
+		div
+			width: 100%
+
+			&:nth-child(1)
+				max-width: 50%
+				padding: 5px
+
+				+r(992)
+					max-width: 100%
+					padding: 0
+
+			&:nth-child(2)
+				padding: 20px
+				max-width: 48%
+				text-align: center
+
+				+r(992)
+					max-width: 100%
+					padding: 10px
+
+.two__table
+	table
+
+	div
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	td
+		+r(992)
+			position: relative
+			padding-left: 30% !important
+			text-align: left
+		
+		&::before
+			+r(992)
+				position: absolute
+				left: 15px
+				max-width: 25%
+
+	img
+		max-width: 47%
+
+	h3
+		max-width: 47%
+
+.three
+
+	&__list
+		padding: 5vh
+	
+	&__item
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		margin-bottom: 20px
+
+		&_block
+			position: relative
+			width: 23%
+
+			+r(992)
+				width: 47%
+				min-width: 280px
+				margin: 0 auto 10px
+
+				&:nth-child(2)
+					order: -1
+
+				&:last-child
+					margin-bottom: 0
+
+			+r(578)
+				width: 100%
+
+		&:last-child
+			margin-bottom: 0
+
+		img
+			width: 100%
+
+		h3
+			font-size: 24px
+			color: #9247c3
+			text-align: center
+		
+		.btn
+			justify-content: center
+			width: 100%
+			margin-bottom: 15px
+
+		a
+			color: #fff
+
+		.dropdown-menu-primary.show,
+		.show.dropdown-menu-info
+			transform: translate3d(0px, 55px, 0px) !important
+			text-align: center !important
+
+		.dropdown
+			width: 100%
+
+			a
+				display: block
+				margin-bottom: 10px
+
+				&:last-child
+					margin-bottom: 0
 
 

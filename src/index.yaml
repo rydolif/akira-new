@@ -1,18 +1,26 @@
 ProjectTitle: akira-redesign
 
 PageList:
-  - file: olimpiady.html
+  - file: one.html
     ready: 50
-  - file: result.html
+  - file: two.html
     ready: 50
-  - file: сongratulations.html
+  - file: three.html
     ready: 50
-  - file: tour.html
-    ready: 50
-  - file: star.html
-    ready: 50
-  - file: chat.html
-    ready: 50
+
+
+  # - file: olimpiady.html
+  #   ready: 50
+  # - file: result.html
+  #   ready: 50
+  # - file: сongratulations.html
+  #   ready: 50
+  # - file: tour.html
+  #   ready: 50
+  # - file: star.html
+  #   ready: 50
+  # - file: chat.html
+  #   ready: 50
 
   # - file: page_x_2.html
   #   ready: 50

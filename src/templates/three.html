@@ -1,0 +1,58 @@
+---
+title: lvl1
+---
+{% extends "layouts/_screen_no-particle.html" %}
+
+{% block screen_content %}
+
+{# partial example #}
+
+
+
+<div class="result profile grow">
+
+  {% include "partials/_nav.html"%}
+
+  <div class="container">
+
+    <div class="result__table profile__table">
+      <h1 class="nice-bg__caption">Ментальная арифметика</h1>
+
+      <div class="three__list">
+
+        <div class="three__item">
+          <div class="three__item_block">
+            <img src="img/chat__bunner.png" alt="">
+          </div>
+          <div class="three__item_block">
+            <h3><b>Akira Battle – <br></b>Вперед к победам!</h3>
+          </div>
+          <div class="three__item_block">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam molestias suscipit optio provident atque quis veritatis vero harum minima in debitis veniam asperiores repudiandae labore modi accusantium rerum, vel laboriosam.</p>
+          </div>
+          <div class="three__item_block">
+            <a href="#" class="btn btn-sm btn-info d-flex align-items-center">Сомотреть урок</a>
+            <div class="dropdown d-inline-block">
+              <button class="btn btn-primary btn-sm dropdown-toggle pl-5" data-offset="0,40" type="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Сидоров Петр
+              </button>
+              <div class="dropdown-menu dropdown-menu-primary fade">
+                <a href="#">Скачать материалы</a>
+                <a href="#">Скачать материалы</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+  
+</div>
+
+
+{% endblock %}
